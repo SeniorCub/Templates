@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Navbars</title>
+     <!-- BootStrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="../both/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../both/fontawesome-free-6.4.2-web/css/all.css">
+     <style>
+          a{
+               text-decoration: none;
+               color: #000;
+               font-weight: 500;
+          }
+          nav{
+               background-color: #f0f0ff;
+               padding: 1vw 5vw!important;
+               margin-bottom: 10vh;
+          }
+          .navbar-brand{
+               img{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 10px;
+                    object-fit: cover;
+               }
+          }
+          #one{
+               i{
+                    margin-right: 5px;
+                    font-weight: auto!important;
+               }
+               .nav-link sup{
+                    font-size: 0.7rem;
+                    background-color: #81818142;
+                    padding: 2px;
+                    border-radius: 5px;
+                    font-weight: 700;
+               }
+               .fa-bomb{
+                    color: #9146ff;
+               }
+               .login{
+                    color: #9146ff;
+                    font-weight: 500;
+               }
+               .btn{
+                    background: linear-gradient(to right, #0000ff ,#9146ff);
+                    border: none;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    font-weight: 300;
+                    i{
+                         margin-left: 2px;
+                         margin-right: 0;
+                    }
+               }
+          }
+          #two{
+               .btn{
+                    background: linear-gradient(to right, #0000ff ,#9146ff);
+                    border: none;
+                    color: #fff;
+                    padding: 0.5rem 1.5rem;
+                    font-weight: 600;
+               }
+          }
+          #three{
+               .collapse{
+                    width: max-content!important;
+               }
+          }
+     </style>
+</head>
+<body>
+     
+     <nav id="one" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+               <a class="navbar-brand" href="/">
+                    <img src="" alt="Logo" class="d-inline-block align-text-top">
+               </a>
+               <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-box-open"></i>Classes</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-calendar-day"></i>Platform</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-graduation-cap"></i>Teacher</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-message"></i>Support</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-bomb"></i>Atheros Pass <sup>Coming soon!</sup></a>
+                         </li>
+                    </ul>
+                    <div class="d-flex gap-3 justify-content-center align-items-center">
+                         <a class="login" href="#">Log In</a>
+                         <button class="btn" type="button">Start Learning <i class="fa fa-rocket"></i></button>
+                    </div>
+               </div>
+          </div>
+     </nav>
+
+     <nav id="two" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+               <a class="navbar-brand" href="/">
+                    <img src="" alt="Logo" class="d-inline-block align-text-top"> Navbar
+               </a>
+               <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Products</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Solutions</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Blog</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">About Us</a>
+                         </li>
+                    </ul>
+                    <div class="d-flex gap-3 justify-content-center align-items-center">
+                         <button class="btn" type="button">Start Now</button>
+                    </div>
+               </div>
+          </div>
+     </nav>
+
+     <nav id="three" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+               <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Products</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Solutions</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Blog</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">About Us</a>
+                         </li>
+                    </ul>
+                    <!-- <div class="d-flex gap-3 justify-content-center align-items-cente d-lg-none">
+                         <a class="login" href="#">Log In</a>
+                         <button class="btn" type="button">Start Learning <i class="fa fa-rocket"></i></button>
+                    </div> -->
+               </div>
+               <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <a class="navbar-brand ms-auto" href="/">
+                    <img src="" alt="Logo" class="d-inline-block align-text-top"> Navbar
+               </a>
+               <div class="d-flex gap-3 justify-content-center align-items-center">
+                    <a class="login" href="#">Log In</a>
+                    <button class="btn" type="button">Start Learning <i class="fa fa-rocket"></i></button>
+               </div>
+          </div>
+     </nav>
+
+     
+     
+     <!-- Bootstrap  -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     <script src="../both/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Font Awsome -->
+     <script src="https://kit.fontawesome.com/2a49fbdbb8.js" crossorigin="anonymous"></script>
+</body>
+</html>
